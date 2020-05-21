@@ -22,7 +22,6 @@ function App() {
   const [inputState, setInputState] = useState(
     {
       inputText: '',
-      count: 0,
     }
   );
 
@@ -66,7 +65,7 @@ function App() {
         state={inputState}
         change={inputChangeHandler}
       />
-      <p>Characters: {inputState.count}</p>
+      <p>Characters: {inputState.inputText.length}</p>
       <p> User input: {inputState.inputText}</p>
       <ValidateLength input={inputState} />
       {displaycbyc}
